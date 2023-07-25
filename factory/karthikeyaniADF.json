@@ -1,0 +1,9 @@
+{
+	"name": "karthikeyaniADF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7ca1a479-02bc-490b-93c7-94137a6a84c1",
+		"tenantId": "479d0973-1234-4484-91b7-47eb308e45f8"
+	}
+}
