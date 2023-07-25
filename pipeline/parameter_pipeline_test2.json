@@ -13,7 +13,20 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "pp_container_name"
+					},
+					{
+						"name": "pp_layer_name_in"
+					},
+					{
+						"name": "pp_filename"
+					},
+					{
+						"name": "pp_layer_name_out"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "DelimitedTextSource",
