@@ -9,7 +9,7 @@
 			"ds_container3": {
 				"type": "string"
 			},
-			"ds_bronze": {
+			"ds_layer_name": {
 				"type": "string"
 			},
 			"ds_filename": {
