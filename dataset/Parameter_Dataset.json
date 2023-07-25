@@ -34,7 +34,7 @@
 					"type": "Expression"
 				}
 			},
-			"columnDelimiter": "Tab (\t)",
+			"columnDelimiter": "\t",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
