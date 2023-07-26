@@ -1,6 +1,20 @@
 {
 	"name": "Parameter_pipeline_Practice",
 	"properties": {
+		"parameters": {
+			"pp_container_name": {
+				"type": "string"
+			},
+			"pp_layer_name_in": {
+				"type": "string"
+			},
+			"pp_filename": {
+				"type": "string"
+			},
+			"pp_layer_name_out": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
