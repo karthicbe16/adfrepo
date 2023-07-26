@@ -12,9 +12,6 @@
 			"ds_filelayer_in": {
 				"type": "string"
 			},
-			"ds_filelayer_out": {
-				"type": "string"
-			},
 			"ds_filename": {
 				"type": "string"
 			}
