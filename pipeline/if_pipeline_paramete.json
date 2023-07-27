@@ -61,6 +61,17 @@
 									"value": "@startswith(item().name,'SalesLTProduct.txt')",
 									"type": "Expression"
 								},
+								"ifFalseActivities": [
+									{
+										"name": "False_Wait",
+										"type": "Wait",
+										"dependsOn": [],
+										"userProperties": [],
+										"typeProperties": {
+											"waitTimeInSeconds": 1
+										}
+									}
+								],
 								"ifTrueActivities": [
 									{
 										"name": "True_Wait",
