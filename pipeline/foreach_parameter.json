@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "Metadata_KK",
+						"referenceName": "getmetadata",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
