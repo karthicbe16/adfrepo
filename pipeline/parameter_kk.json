@@ -190,6 +190,9 @@
 			},
 			"pp_layer_name_out": {
 				"type": "string"
+			},
+			"pp_layer_name_out2": {
+				"type": "string"
 			}
 		},
 		"annotations": []
