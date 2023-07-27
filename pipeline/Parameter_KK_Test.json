@@ -1,6 +1,20 @@
 {
 	"name": "Parameter_KK_Test",
 	"properties": {
+		"parameters": {
+			"pp_container": {
+				"type": "string"
+			},
+			"pp_layer_name_in": {
+				"type": "string"
+			},
+			"pp_filename": {
+				"type": "string"
+			},
+			"pp_layer_name_out": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
