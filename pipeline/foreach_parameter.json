@@ -113,10 +113,10 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "Metadata_KK",
+									"referenceName": "Metadatasink",
 									"type": "DatasetReference",
 									"parameters": {
-										"ds_childname": {
+										"ds_sink_childname": {
 											"value": "@item().name",
 											"type": "Expression"
 										}
