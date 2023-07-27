@@ -169,6 +169,10 @@
 								"value": "@pipeline().parameters.pp_containername",
 								"type": "Expression"
 							},
+							"ds_directory": {
+								"value": "@pipeline().parameters.pp_layer_name_out2",
+								"type": "Expression"
+							},
 							"ds_filename": {
 								"value": "@pipeline().parameters.pp_filename",
 								"type": "Expression"
