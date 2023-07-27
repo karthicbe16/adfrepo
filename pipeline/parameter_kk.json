@@ -142,7 +142,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "sourcedata",
+						"referenceName": "source2",
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_filesystem": {
@@ -162,15 +162,11 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "sourcedata",
+						"referenceName": "source2",
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_filesystem": {
 								"value": "@pipeline().parameters.pp_containername",
-								"type": "Expression"
-							},
-							"ds_directory": {
-								"value": "@pipeline().parameters.pp_layer_name_in",
 								"type": "Expression"
 							},
 							"ds_filename": {
