@@ -1,0 +1,20 @@
+{
+	"name": "pipeline_parameter_v2",
+	"properties": {
+		"parameters": {
+			"pp_container": {
+				"type": "string"
+			},
+			"pp_layer_in": {
+				"type": "string"
+			},
+			"pp_filename": {
+				"type": "string"
+			},
+			"pp_layer_out": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}
