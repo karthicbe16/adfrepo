@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"ds_filename": {
+			"ds_childname": {
 				"type": "string"
 			}
 		},
