@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Get Metadata1",
+				"name": "Metadata_All",
 				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {
@@ -17,13 +17,7 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "Metadata_KK",
-						"type": "DatasetReference",
-						"parameters": {
-							"ds_childname": {
-								"value": "@pipeline().parameters.ds_childname",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					},
 					"fieldList": [
 						"childItems",
@@ -40,13 +34,24 @@
 						"type": "DelimitedTextReadSettings"
 					}
 				}
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Metadata_All",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"isSequential": true
+				}
 			}
 		],
-		"parameters": {
-			"ds_childname": {
-				"type": "string"
-			}
-		},
 		"annotations": []
 	}
 }
