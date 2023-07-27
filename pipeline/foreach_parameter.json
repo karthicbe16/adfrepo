@@ -48,6 +48,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('Metadata_All').output.childItems",
+						"type": "Expression"
+					},
 					"isSequential": true
 				}
 			}
