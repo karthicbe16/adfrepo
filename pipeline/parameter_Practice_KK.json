@@ -210,7 +210,7 @@
 								"type": "Expression"
 							},
 							"ds_directory": {
-								"value": "@pipeline().parameters.pp_layer_namer_out",
+								"value": "@pipeline().parameters.pp_layer_name_in",
 								"type": "Expression"
 							},
 							"ds_filename": {
