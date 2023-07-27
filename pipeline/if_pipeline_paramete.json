@@ -63,12 +63,12 @@
 								},
 								"ifTrueActivities": [
 									{
-										"name": "Wait1",
+										"name": "True_Wait",
 										"type": "Wait",
 										"dependsOn": [],
 										"userProperties": [],
 										"typeProperties": {
-											"waitTimeInSeconds": 5
+											"waitTimeInSeconds": 2
 										}
 									}
 								]
