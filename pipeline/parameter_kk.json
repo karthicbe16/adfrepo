@@ -142,7 +142,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "source2",
+						"referenceName": "sourcedata",
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_filesystem": {
@@ -162,7 +162,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "source2",
+						"referenceName": "sourcedata",
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_filesystem": {
