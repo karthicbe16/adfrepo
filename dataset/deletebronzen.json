@@ -1,0 +1,27 @@
+{
+	"name": "deletebronzen",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"ds_childname_delete": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().ds_childname_delete",
+					"type": "Expression"
+				},
+				"folderPath": "BRONZE",
+				"fileSystem": "adlscontainer1"
+			}
+		}
+	}
+}
