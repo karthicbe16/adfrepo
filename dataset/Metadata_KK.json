@@ -19,7 +19,7 @@
 					"value": "@dataset().ds_childname",
 					"type": "Expression"
 				},
-				"folderPath": "STAGEING",
+				"folderPath": "BRONZE",
 				"fileSystem": "adlscontainer1"
 			},
 			"columnDelimiter": "\t",
