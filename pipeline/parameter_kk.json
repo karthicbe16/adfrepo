@@ -142,7 +142,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "step2",
+						"referenceName": "sourcedata",
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_filesystem": {
@@ -150,7 +150,7 @@
 								"type": "Expression"
 							},
 							"ds_directory": {
-								"value": "@pipeline().parameters.pp_layer_name_in",
+								"value": "@pipeline().parameters.pp_layer_name_out",
 								"type": "Expression"
 							},
 							"ds_filename": {
@@ -162,7 +162,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "step2",
+						"referenceName": "sourcedata",
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_filesystem": {
@@ -170,7 +170,7 @@
 								"type": "Expression"
 							},
 							"ds_directory": {
-								"value": "@pipeline().parameters.pp_layer_name_out",
+								"value": "@pipeline().parameters.pp_layer_name_in",
 								"type": "Expression"
 							},
 							"ds_filename": {
