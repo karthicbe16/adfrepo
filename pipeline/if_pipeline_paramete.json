@@ -47,7 +47,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get Metadata1').output.childItems",
+						"value": "@activity('Filter1').output.pipelineReturnValue",
 						"type": "Expression"
 					},
 					"isSequential": true,
