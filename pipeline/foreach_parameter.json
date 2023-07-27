@@ -36,6 +36,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"ds_childname": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
