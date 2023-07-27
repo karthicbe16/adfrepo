@@ -182,7 +182,7 @@
 				]
 			},
 			{
-				"name": "Delete1",
+				"name": "Deletebronze",
 				"type": "Delete",
 				"dependsOn": [
 					{
