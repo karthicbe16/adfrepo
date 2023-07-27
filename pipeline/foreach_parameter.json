@@ -125,7 +125,7 @@
 							]
 						},
 						{
-							"name": "Delete1",
+							"name": "deletemetadata",
 							"type": "Delete",
 							"dependsOn": [
 								{
@@ -145,21 +145,14 @@
 							"userProperties": [],
 							"typeProperties": {
 								"dataset": {
-									"referenceName": "deletebronzen",
-									"type": "DatasetReference",
-									"parameters": {
-										"ds_childname_delete": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
-									}
+									"referenceName": "deletemetadat",
+									"type": "DatasetReference"
 								},
 								"logStorageSettings": {
 									"linkedServiceName": {
 										"referenceName": "AzureDataLakeStorage1",
 										"type": "LinkedServiceReference"
-									},
-									"path": "adlscontainer1/BRONZE"
+									}
 								},
 								"enableLogging": true,
 								"storeSettings": {
