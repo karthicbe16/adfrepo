@@ -49,7 +49,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "step1",
+						"referenceName": "sourcedata",
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_filesystem": {
@@ -69,7 +69,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "step1",
+						"referenceName": "sourcedata",
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_filesystem": {
