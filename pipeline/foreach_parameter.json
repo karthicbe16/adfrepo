@@ -17,7 +17,13 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "Metadata_KK",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"ds_childname": {
+								"value": "@pipeline().parameters.ds_childname",
+								"type": "Expression"
+							}
+						}
 					},
 					"fieldList": [
 						"childItems",
