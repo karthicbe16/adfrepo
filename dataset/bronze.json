@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "BRONZE",
+				"fileName": "SalesLTCustomer.txt",
+				"folderPath": "STAGEING",
 				"fileSystem": "adlscontainer1"
 			},
 			"columnDelimiter": ",",
