@@ -24,7 +24,7 @@
 		],
 		"typeProperties": {
 			"schema": "SalesLT",
-			"table": "Samples"
+			"table": "Product"
 		}
 	}
 }
