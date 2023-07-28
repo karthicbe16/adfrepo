@@ -29,7 +29,12 @@
 					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
+							"type": "AzureBlobFSWriteSettings",
+							"metadata": [
+								{
+									"value": ""
+								}
+							]
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
@@ -40,6 +45,188 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "CustomerID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CustomerID",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "NameStyle",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "NameStyle",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Title",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Title",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "FirstName",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FirstName",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "MiddleName",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "MiddleName",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "LastName",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LastName",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Suffix",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Suffix",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "CompanyName",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CompanyName",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "SalesPerson",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SalesPerson",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "EmailAddress",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "EmailAddress",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Phone",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Phone",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "PasswordHash",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PasswordHash",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "PasswordSalt",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PasswordSalt",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "rowguid",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "rowguid",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ModifiedDate",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ModifiedDate",
+									"type": "String",
+									"physicalType": "String"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
