@@ -1,0 +1,20 @@
+{
+	"name": "texttocsv",
+	"properties": {
+		"parameters": {
+			"pp_containernme": {
+				"type": "string"
+			},
+			"pp_layer_name_in": {
+				"type": "string"
+			},
+			"pp_filename": {
+				"type": "string"
+			},
+			"pp_layer_name_out": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}
