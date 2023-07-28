@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().pp_filename",
+					"value": "@Concat(dataset().pp_filename,'.csv')",
 					"type": "Expression"
 				},
 				"folderPath": "BRONZE",
