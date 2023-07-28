@@ -1,0 +1,20 @@
+{
+	"name": "csv_text_fileconvert_pipeline",
+	"properties": {
+		"parameters": {
+			"pp_container_name": {
+				"type": "string"
+			},
+			"pp_layer_in": {
+				"type": "string"
+			},
+			"pp_filename": {
+				"type": "string"
+			},
+			"pp_lyer_out": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}
