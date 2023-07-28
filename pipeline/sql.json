@@ -19,7 +19,9 @@
 						"referenceName": "SqlServerTable1",
 						"type": "DatasetReference"
 					},
-					"fieldList": []
+					"fieldList": [
+						"structure"
+					]
 				}
 			},
 			{
