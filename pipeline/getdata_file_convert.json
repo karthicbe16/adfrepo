@@ -1,0 +1,14 @@
+{
+	"name": "getdata_file_convert",
+	"properties": {
+		"parameters": {
+			"pp_contaiername": {
+				"type": "string"
+			},
+			"pp_layername": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}
