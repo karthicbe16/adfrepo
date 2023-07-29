@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().pp_filename",
+					"value": "@{split(dataset().pp_filename,'txt')[2]}",
 					"type": "Expression"
 				},
 				"folderPath": "STAGEING",
