@@ -1,5 +1,5 @@
 {
-	"name": "sqltabletofile",
+	"name": "sqlfiletotable",
 	"properties": {
 		"activities": [
 			{
