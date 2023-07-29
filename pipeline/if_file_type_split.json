@@ -109,13 +109,7 @@
 										"inputs": [
 											{
 												"referenceName": "csv_txt_file_split_source",
-												"type": "DatasetReference",
-												"parameters": {
-													"ds_filename": {
-														"value": "@activity('Get Metadata1').output.itemName",
-														"type": "Expression"
-													}
-												}
+												"type": "DatasetReference"
 											}
 										],
 										"outputs": [
