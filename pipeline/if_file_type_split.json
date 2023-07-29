@@ -1,6 +1,17 @@
 {
 	"name": "if_file_type_split",
 	"properties": {
+		"parameters": {
+			"pp_containername": {
+				"type": "string"
+			},
+			"pp_laer_name_in": {
+				"type": "string"
+			},
+			"pp_filename": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
