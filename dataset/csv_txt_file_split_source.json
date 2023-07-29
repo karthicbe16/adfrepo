@@ -6,12 +6,6 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"ds_filesystem": {
-				"type": "string"
-			},
-			"ds_directory": {
-				"type": "string"
-			},
 			"ds_filename": {
 				"type": "string"
 			}
@@ -25,14 +19,8 @@
 					"value": "@dataset().ds_filename",
 					"type": "Expression"
 				},
-				"folderPath": {
-					"value": "@dataset().ds_directory",
-					"type": "Expression"
-				},
-				"fileSystem": {
-					"value": "@dataset().ds_filesystem",
-					"type": "Expression"
-				}
+				"folderPath": "STAGEING",
+				"fileSystem": "adlscontainer1"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
