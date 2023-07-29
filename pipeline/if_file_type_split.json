@@ -15,20 +15,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"dataset": {
-						"referenceName": "filesplit",
-						"type": "DatasetReference",
-						"parameters": {
-							"ds_filesystem": {
-								"value": "@pipeline().parameters.pp_containername",
-								"type": "Expression"
-							},
-							"ds_directory": {
-								"value": "@pipeline().parameters.pp_laer_name_in",
-								"type": "Expression"
-							}
-						}
-					},
 					"fieldList": [],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
@@ -44,10 +30,7 @@
 			"pp_containername": {
 				"type": "string"
 			},
-			"pp_laer_name_in": {
-				"type": "string"
-			},
-			"pp_filename": {
+			"pp_layer_name_in": {
 				"type": "string"
 			}
 		},
