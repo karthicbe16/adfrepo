@@ -1,5 +1,5 @@
 {
-	"name": "csv_txt_file_split",
+	"name": "csv_txt_file_split_source",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
