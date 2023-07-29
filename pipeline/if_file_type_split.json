@@ -123,7 +123,10 @@
 												"referenceName": "csv_txt_split_sink_txt",
 												"type": "DatasetReference",
 												"parameters": {
-													"ds_filename": ".item.name()"
+													"ds_filename": {
+														"value": "@activity('Get Metadata1').output.itemName",
+														"type": "Expression"
+													}
 												}
 											}
 										]
