@@ -12,8 +12,23 @@
 					"name": "sourcedataset"
 				}
 			],
-			"sinks": [],
-			"transformations": [],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "sinkdataset_1",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "filter1"
+				},
+				{
+					"name": "select1"
+				}
+			],
 			"scriptLines": [
 				"source(output(",
 				"          ProductID as string,",
@@ -36,7 +51,26 @@
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> sourcedataset"
+				"     ignoreNoFilesFound: false) ~> sourcedataset",
+				"sourcedataset filter(Color=='Red') ~> filter1",
+				"filter1 select(mapColumn(",
+				"          ProductID,",
+				"          Name,",
+				"          ProductNumber,",
+				"          Color",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1",
+				"select1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     input(",
+				"          {CustomerID     NameStyle     Title     FirstName     MiddleName     LastName     Suffix     CompanyName     SalesPerson     EmailAddress     Phone     PasswordHash     PasswordSalt     rowguid     ModifiedDate} as string",
+				"     ),",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
 		}
 	}
