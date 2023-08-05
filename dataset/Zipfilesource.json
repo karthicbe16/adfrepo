@@ -1,0 +1,41 @@
+{
+	"name": "Zipfilesource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "AdventureWorksLT2012.zip",
+				"folderPath": "STAGEING",
+				"fileSystem": "adlscontainer1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\fFyL�\t�.\tS\u0000\u0000q�\u0000\u0000\u0012\u0000\u0000\u0000SalesLTAddress.txt���v\u001bM\u0015���)�\u0016\u0003&t���bD_\u0013 !!\t\u0004��\u0014[�\"�\u0014$;!�\u0011���\u0001\u000f�+��j�vbw#\u0003���ί��:g�}.����:?�-�����ß��6���7��Y]}���Z\\-_��W����^o�v__//V����v�X7���l��rq�:��؞���Z���[?\b3�23��v����ZΛ�'�_����Y���\\�׳w���jsq�g�f��8�������",
+				"type": "String"
+			},
+			{
+				"name": "�奯�2�\u0012W�.���I�6K2k�63��Y5��4OR���<M\u001a�y���\u000f��3�����~�^/���ry����jcR�TM�'64.\tU(��.]�|Q�e`|�Bj\u0017��9?����O��'\u001f\u0016�2��~�v�W�~;�+�4�5��M݆��>MlYؤ�m˲��U޶�)\u000f�\u000e������~���b�.��7��0���r���ڭ���",
+				"type": "String"
+			},
+			{
+				"name": "�\u001b�\u0017ijgY^uE�eIߘ��}��:䉩�K�\f�Y��=4��g�G���9_�\u0017�����0���_�g��^�_�͚�fq��=�~?ϟ\u00153o�P�%�T�Ol纤��\")��OӦ���z��c���$�w�\u000bN��r��p�KN���rꐵfW7Mom��|\fkn��[��ۍ�Mf����\u000en�5�w����j^}^\u000e��^n\u0018pr좘\u0015��Ҷ�I�\u001cc�Y�TE\bI(�-˼h�r|��\u0016��xI���\\��Y|=",
+				"type": "String"
+			},
+			{
+				"name": "�z�Y��:�w����r�l��\u001f߯\u0016ǭ�mQ�MU�",
+				"type": "String"
+			}
+		]
+	}
+}
