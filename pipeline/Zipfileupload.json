@@ -85,10 +85,14 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/karthi.cbe16@gmail.com/Project1 2023-08-10 15:13:14",
+					"notebookPath": "/Users/karthi.cbe16@gmail.com/Project1_POC",
 					"baseParameters": {
 						"file_path": {
 							"value": "@pipeline().parameters.file_path",
+							"type": "Expression"
+						},
+						"file_name": {
+							"value": "@pipeline().parameters.file_name",
 							"type": "Expression"
 						}
 					}
@@ -101,6 +105,9 @@
 		],
 		"parameters": {
 			"file_path": {
+				"type": "string"
+			},
+			"file_name": {
 				"type": "string"
 			}
 		},
