@@ -90,10 +90,6 @@
 						"file_path": {
 							"value": "@pipeline().parameters.file_path",
 							"type": "Expression"
-						},
-						"file_name": {
-							"value": "@pipeline().parameters.file_name",
-							"type": "Expression"
 						}
 					}
 				},
@@ -105,9 +101,6 @@
 		],
 		"parameters": {
 			"file_path": {
-				"type": "string"
-			},
-			"file_name": {
 				"type": "string"
 			}
 		},
