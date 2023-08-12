@@ -85,7 +85,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/karthi.cbe16@gmail.com/POC2",
+					"notebookPath": "/Users/karthi.cbe16@gmail.com/Project1_POC",
 					"baseParameters": {
 						"file_path": {
 							"value": "@pipeline().parameters.file_path",
